@@ -55,7 +55,7 @@ angular.module('matchUpApp')
     $scope.closeNotification = function(accept){
       if (accept) {
         $scope.showSimpleToast()
-        $rootScope.myGames = [{"name":"Tennis", "date":$scope.date.toLocaleString(), "image":"images/tennisgirl.jpg"}];
+        $rootScope.myGames = [{"name":"Tennis", "date":$scope.date.toLocaleString(), "image":"images/tennisgirl.jpg", "sportIcon":iconForSport("tennis")}];
       } else {
         $scope.match = $scope.matches[1]
       }
