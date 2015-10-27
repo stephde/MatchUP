@@ -8,7 +8,7 @@
  * Controller of the matchUpApp
  */
 angular.module('matchUpApp')
-  .controller('SurprisemeCtrl', ["$scope", "$mdToast", function ($scope, $mdToast) {
+  .controller('SurprisemeCtrl', ["$scope", "$mdToast", "$rootScope", function ($scope, $mdToast, $rootScope) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
@@ -55,6 +55,7 @@ angular.module('matchUpApp')
     $scope.closeNotification = function(accept){
       if (accept) {
         $scope.showSimpleToast()
+        $rootScope.myGames = [{"name":"Tennis", "date":$scope.date.toLocaleString(), "image":"images/tennisgirl.jpg"}];
       } else {
         $scope.match = $scope.matches[1]
       }

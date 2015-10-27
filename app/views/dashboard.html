@@ -1,5 +1,5 @@
 <md-content md-theme="docs-dark" layout-padding layout="row" layout-sm="column" layout-align="start center">
-	<img ng-src="images/profil.jpg" class="avatar md-avatar" />
+	<img ng-src="images/members/stephan.jpg" class="avatar md-avatar" />
     <div class="md-list-item-text" layout="column">
 	      <h3>{{ $root.username }}</h3>
 	      <h4><span ng-repeat="sport in $root.sports | limitTo:6">
@@ -7,16 +7,21 @@
 		</span></h4>
     </div>
 </md-content>
-<div flex ng-cloak layout="row" layout-fill layout-align="space-around" layout-wrap>
+<div flex ng-cloak layout="column" layout-fill layout-align="space-around">
 	<div flex="50" layout-align="center center" layout ="column">
 		<h2>There are <h1>{{::near}}</h1><h2>Offers in your area</h2>
 		<p> {{$root.isMatchFound}} </p>
-		<div flex="60" layout layout-align="center center">
-		<md-button class="md-raised md-primary" ng-href="#/surpriseme">Find matches</md-button>
+		<div layout layout-align="center center">
+			<md-button class="md-raised md-primary" ng-href="#/surpriseme">Surprise Me</md-button>
+			<md-button class="md-raised md-primary" ng-href="#/aroundme">Games and Players nearby</md-button>
+		</div>
 	</div>
 </div>
-<div flex="50">
-		
+
+<div ng-controller="CurrentGamesCtrl">
+	<div ng-include src="'views/currentGames.html'"></div>
 </div>
-	
+
+<div ng-controller="HistoryCtrl">
+	<div ng-include src="'views/history.html'"></div>
 </div>

@@ -51,6 +51,10 @@ angular
         templateUrl: 'views/history.html',
         controller: 'HistoryCtrl'
       })
+      .when('/currentGames', {
+        templateUrl: 'views/currentGames.html',
+        controller: 'CurrentGamesCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
