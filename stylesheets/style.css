@@ -1,0 +1,38 @@
+h1 {
+	margin: 1rem auto 1rem auto;
+}
+
+.centered {
+	margin: auto;
+}
+
+.block {
+	display: block;
+	margin: 1rem;
+}
+
+#headerWrapper {
+	display: flex;
+	border-bottom: 1px solid lightgray;
+}
+
+#contentWrapper {
+	display: flex;
+	margin-top: 2rem;
+}
+
+html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+#map {
+        height: 500px;
+        width: 768px;
+}
+
+/*#map img {
+    -webkit-filter: brightness(0.0); 
+    filter: brightness(0.0);
+}*/
