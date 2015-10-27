@@ -8,10 +8,9 @@
  * Controller of the matchUpApp
  */
 angular.module('matchUpApp')
-  .controller('LoginCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('LoginCtrl', function ($scope, $location, $timeout) {
+  	$scope.facebookClick = function() {
+  		$scope.facebook = true;
+  		$timeout(function() {$location.path('sports')},2000);
+  	}
   });

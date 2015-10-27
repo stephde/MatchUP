@@ -1,17 +1,20 @@
-<md-content md-theme="docs-dark" layout-padding layout="row" layout-sm="column">
-	<img ng-src="{{item.face}}?{{$index}}" class="md-avatar" alt="{{item.who}}" />
+<md-content md-theme="docs-dark" layout-padding layout="row" layout-sm="column" layout-align="start center">
+	<img ng-src="images/profil.jpg" class="avatar md-avatar" />
     <div class="md-list-item-text" layout="column">
-      <h3>{{ $root.username }}</h3>
-      <h4>{{ $root.sports }}</h4>
+	      <h3>{{ $root.username }}</h3>
+	      <h4><span ng-repeat="sport in $root.sports | limitTo:6">
+	     {{sport}}{{$last ? '' : ($index==$root.sports.length-2) ? ' and ' : ',&nbsp;'}}
+		</span></h4>
     </div>
 </md-content>
-<div flex ng-cloak layout="column" layout-fill layout-align="space-around">
-	<div flex layout="row" layout-align="space-around">
-		<div flex></div>
-		<div flex></div>
+<div flex ng-cloak layout="row" layout-fill layout-align="space-around" layout-wrap>
+	<div flex="50" layout-align="center center" layout ="column">
+		<h2>There are <h1>{{getRandom()}}</h1><h2>Offers in your area</h2>
 	</div>
-	<div flex layout="row" layout-align="space-around">
-		<div flex>3</div>
-		<div flex>4</div>
+	<div flex="50">
+		dadadasdfaf
+	</div>
+	<div flex="50">
+		dadadasdfaf
 	</div>
 </div>

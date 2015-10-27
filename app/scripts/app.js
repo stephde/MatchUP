@@ -45,4 +45,9 @@ angular
   $mdThemingProvider.theme('default')
     .primaryPalette('blue')
     .accentPalette('pink');
-});
+}).config(function($mdThemingProvider) {
+    // Configure a dark theme with primary foreground yellow
+    $mdThemingProvider.theme('docs-dark', 'default')
+      .primaryPalette('yellow')
+      .dark();
+  });;

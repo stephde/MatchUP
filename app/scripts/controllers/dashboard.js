@@ -8,10 +8,11 @@
  * Controller of the matchUpApp
  */
 angular.module('matchUpApp')
-  .controller('DashboardCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('DashboardCtrl', function ($rootScope, $scope) {
+  	$rootScope.username = $rootScope.username || 'Username';
+  	$rootScope.sports = $rootScope.sports || ['Tennis', 'Handball'];
+  	$scope.getRandom = function(){
+	  return Math.floor((Math.random()*200)+1);
+	}
+
   });

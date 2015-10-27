@@ -13,11 +13,24 @@
 	    <div layout-fill layout="row">
 	    	<div flex></div>
 	    	<md-button flex="30" class="md-raised md-primary" ng-href="#/sports">Log In</md-button>
-	    	<div flex></div>
+	    	<div flex="10"></div>
 	    	<md-button flex="30"  class="md-raised">Register</md-button>
+	    	<div flex></div>
+	    </div>
+	   	<div layout-fill layout="row">
+	    	<div flex></div>
+	    	<md-button layout-fill flex="70" class="md-raised md-primary" ng-click="facebookClick()">
+	    		<md-icon md-font-icon="fa-facebook" class="fa fa-2x"></md-icon><h4>Facebook login</h4>
+	    	</md-button>
 	    	<div flex></div>
 	    </div>
     </section>
     <div flex="10"></div>
    </md-content>
+   <div ng-show="facebook" style="position:absolute; top: 0px; left: 0px; width:100%; height:100%; z-index:100; background-color: white" layout-align="center center" layout = "row">
+   	<div flex layout="column" layout-align="center center">
+   	<h3>Finding Friends in your area</h3>
+   	<md-progress-circular md-diameter="96"></md-progress-circular>
+   	</div>
+   </div>
  </div>
