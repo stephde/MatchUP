@@ -8,10 +8,17 @@
  * Controller of the matchUpApp
  */
 angular.module('matchUpApp')
-  .controller('SuprisemeCtrl', function () {
+  .controller('SuprisemeCtrl', ["$scope", function ($scope) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
-  });
+    
+    $scope.date = new Date()
+    
+    $scope.closeNotification = function(accept){
+    	
+    }
+    
+  }]);
