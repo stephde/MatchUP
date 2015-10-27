@@ -15,3 +15,7 @@ function fetchData(){
 }
 
 fetchData();
+
+function loadTemplate(template){
+	$("#contentWrapper").load("templates/" + template + ".html");
+}
