@@ -1,14 +1,14 @@
-<md-content md-theme="docs-dark" layout-padding layout="row" layout-sm="column" layout-align="start center">
-	<img ng-src="images/members/stephan.jpg" class="avatar md-avatar" />
-    <div class="md-list-item-text" layout="column">
-	      <h3>{{ $root.username }}</h3>
-	      <h4><span ng-repeat="sport in $root.sports | limitTo:6">
-	     {{sport}}{{$last ? '' : ($index==$root.sports.length-2) ? ' and ' : ',&nbsp;'}}
-		</span></h4>
-    </div>
-</md-content>
-<div flex ng-cloak layout="column" layout-fill layout-align="space-around">
-	<div flex="50" layout-align="center center" layout ="column">
+<div flex layout="column" layout-align="space-around">
+	<md-content flex md-theme="docs-dark" layout-padding layout="row" layout-align="start center">
+		<img ng-src="images/members/stephan.jpg" class="avatar md-avatar" />
+	    <div class="md-list-item-text" layout="column">
+		      <h3>{{ $root.username }}</h3>
+		      <h4><span ng-repeat="sport in $root.sports | limitTo:6">
+		     {{sport}}{{$last ? '' : ($index==$root.sports.length-2) ? ' and ' : ',&nbsp;'}}
+			</span></h4>
+	    </div>
+	</md-content>
+	<div flex layout-align="center center" layout="column">
 		<h2>There are <h1>{{::near}}</h1><h2>Offers in your area</h2>
 		<p> {{$root.isMatchFound}} </p>
 		<div layout layout-align="center center">
@@ -16,12 +16,7 @@
 			<md-button class="md-raised md-primary" ng-href="#/aroundme">Games and Players nearby</md-button>
 		</div>
 	</div>
-</div>
 
-<div ng-controller="CurrentGamesCtrl">
-	<div ng-include src="'views/currentGames.html'"></div>
-</div>
-
-<div ng-controller="HistoryCtrl">
-	<div ng-include src="'views/history.html'"></div>
+	<div flex ng-include src="'views/currentGames.html'" ng-controller="CurrentGamesCtrl"></div>
+	<div flex ng-include src="'views/history.html'" ng-controller="HistoryCtrl"></div>
 </div>
