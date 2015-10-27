@@ -43,6 +43,10 @@ angular
         templateUrl: 'views/location.html',
         controller: 'LocationCtrl'
       })
+      .when('/aroundme', {
+        templateUrl: 'views/aroundme.html',
+        controller: 'AroundmeCtrl'
+      })
       .when('/history', {
         templateUrl: 'views/history.html',
         controller: 'HistoryCtrl'
@@ -50,13 +54,13 @@ angular
       .otherwise({
         redirectTo: '/'
       });
-  }).config(function($mdThemingProvider) {
+  })/*.config(function($mdThemingProvider) {
   $mdThemingProvider.theme('default')
     .primaryPalette('blue')
     .accentPalette('pink');
-}).config(function($mdThemingProvider) {
+})*/.config(function($mdThemingProvider) {
     // Configure a dark theme with primary foreground yellow
     $mdThemingProvider.theme('docs-dark', 'default')
       .primaryPalette('yellow')
       .dark();
-  });;
+  });
