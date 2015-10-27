@@ -1,15 +1,15 @@
-<div flex layout-fill layout="column">
+<md-card flex layout="column" style="max-width:500px; margin: auto" layout-padding layout-margin >
 	<h2>{{match.sport}}</h2>
 	<div style="position:absolute; margin-top: 8px; padding:10px; background-color:rgba(255,255,255,0.8); width:100%">
 	<md-icon md-font-icon="fa-calendar" class="fa fa-2x"style="display:inline-block;"></md-icon>
 	<span>{{date.toLocaleString()}}<span></div>
 	<img ng-src={{match.image}} alt="Description" />
     
-    <div style="position:relative; margin-top: -100px" layout="column">	
+    <div style="position:relative; margin-top: -100px;" layout="column">	
 		<md-button flex ng-click="closeNotification(true)" ng-href="#/dashboard" class="md-primary md-raised">Yes</md-button>
 		<md-button flex ng-click="closeNotification(false)" class="md-warn md-raised">Not now</md-button>
 	</div>
 
 	<div><h3>Map</h3><img ng-src={{match.map}} alt="Description" style="width:100%"/></div>
 
-</div>
+</md-card>

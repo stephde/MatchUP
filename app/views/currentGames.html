@@ -6,11 +6,11 @@
           <img ng-src="{{game.image}}" class="md-card-image" alt="Person">
           <md-card-content layout="column">
             <div layout="row" layout-fill>
-                <img src="{{game.sportIcon}}" style="width:auto">
+                <img src="{{game.sportIcon}}" style="width:64px; height:64px">
                 <h2 flex>{{game.name}}</h2>
-                <h2 flex>{{game.date}}</h2>
+                <h3 flex>{{game.date}}</h3>
             </div>
-            <div><img ng-src="game.map" alt="Description" style="width:100%"/></div>
+            <div><img ng-src="{{game.map}}" alt="Description" style="width:100%"/></div>
           </md-card-content>
         </md-card>
 
