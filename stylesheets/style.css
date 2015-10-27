@@ -1,0 +1,8 @@
+h1 {
+	margin: 1rem auto 1rem auto;
+}
+
+#headerWrapper {
+	display: flex;
+	border-bottom: 1px solid lightgray;
+}
