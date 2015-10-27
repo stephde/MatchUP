@@ -3,7 +3,7 @@
 	<div class="notificationWrapper">
 		
 		<div class="notificationHeader">
-			<h2>Tennis</h2>
+			<h2>{{match.sport}}</h2>
 		</div>
 		
 		<div class="notificationMap">
@@ -13,6 +13,10 @@
 		<div class="notificationTime">
 			<md-datepicker ng-model="date" md-placeholder="Enter date" disabled></md-datepicker>
 		</div>
+
+    <div  class="image">
+      <img flex="80" ng-src={{match.image}} alt="Description" />
+    </div>
 		
 		<md-button ng-click="closeNotification(true)" class="md-primary">Yes</md-button>
 		<md-button ng-click="closeNotification(false)" class="md-warn">Not now</md-button>
