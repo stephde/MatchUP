@@ -1,0 +1,64 @@
+<div class="centered">
+	
+	<h2>Where do you live?</h2>
+	<input type="text">
+	<button onclick="showSports()">Enter</button>
+	<div id="map"></div>
+<script>
+
+var map;
+var circle;
+
+function initMap() {
+  // Create the map.
+  map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 15,
+    center: {lat: 37.4475533, lng: -122.1618798},
+    mapTypeId: google.maps.MapTypeId.TERRAIN
+  });
+
+  var marker = new google.maps.Marker({
+  	map: map,
+  	position: map.center
+  });
+
+}
+
+function showSports() {
+	//var sportMarkerArray = [];
+
+	for (var i = 0; i < sportData.length; i++) {
+		var sportMarker = new google.maps.Marker({
+		  	map: map,
+		  	position: {lat : sportData[i].lat, lng : sportData[i].long},
+		  	icon: iconForSport(sportData[i].sport)
+ 	 	});
+ 	 	
+ 	 	var infowindow = new google.maps.InfoWindow({
+			content: "asdfads<br>asdfads<br>asdfads<br>"
+		});
+
+ 	 	sportMarker.addListener('click', function() {
+ 	 		infowindow.open(map, sportMarker);
+ 	 	})
+		//sportMarkerArray[i] = sportMarker;
+	}
+
+	//for (var i = 0; i < sportMarkerArray.length; i++) {
+	//	var infowindow = new google.maps.InfoWindow({
+	//		content: "asdfads<br>asdfads<br>asdfads<br>"
+	//	});
+//
+	//	sportMarkerArray[i].addListener('click', function() {
+   	//		infowindow.open(map, sportMarkerArray[i]);
+  	//	});
+
+	//}
+}
+
+
+
+
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?signed_in=true&callback=initMap"></script>
+
