@@ -6,8 +6,8 @@
           <img ng-src="{{game.image}}" class="md-card-image" alt="Person">
           <md-card-content>
             <h2 class="md-title">{{game.name}}</h2>
-            <div layout>
-                <div flex="10" layout layout-align="center center">
+            <div layout="column" >
+                <div flex>
                     <span class="md-body-1">How good was the game?</span>
                 </div>
                 <md-slider flex md-discrete ng-model="game.feedback" step="1" min="1" max="10" aria-label="rating" class="sportElement">
