@@ -62,7 +62,7 @@ angular.module('matchUpApp')
     	
     };
 
-    $scope.matches = [{"sport":"Baseball", "image":"images/baseballguy.jpg"},{"sport":"Tennis","image":"images/tennisgirl.jpg"}];
+    $scope.matches = [{"sport":"Baseball", "image":"images/baseballguy.jpg", "map":"images/mapBaseball.png"},{"sport":"Tennis","image":"images/tennisgirl.jpg", "map":"images/mapTennis.png"}];
     $scope.match = $scope.matches[0];
     
   }]);
