@@ -30,6 +30,10 @@ angular
         templateUrl: 'views/sports.html',
         controller: 'SportsCtrl'
       })
+      .when('/supriseme', {
+        templateUrl: 'views/supriseme.html',
+        controller: 'SuprisemeCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
