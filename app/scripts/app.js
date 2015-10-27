@@ -43,6 +43,10 @@ angular
         templateUrl: 'views/location.html',
         controller: 'LocationCtrl'
       })
+      .when('/history', {
+        templateUrl: 'views/history.html',
+        controller: 'HistoryCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
