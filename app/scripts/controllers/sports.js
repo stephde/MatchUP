@@ -1048,11 +1048,11 @@ angular.module('matchUpApp')
     
     $scope.mySports = [{
     	name: "",
-    	skill: "1"
+    	skill: "5"
     }]
     
     $scope.addSport = function(){
-    	$scope.mySports.push({})
+    	$scope.mySports.push({skill: "5"})
     }
     
   }]);
