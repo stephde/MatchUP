@@ -1,1 +1,17 @@
-<p>This is the dashboard view.</p>
+<md-content md-theme="docs-dark" layout-padding layout="row" layout-sm="column">
+	<img ng-src="{{item.face}}?{{$index}}" class="md-avatar" alt="{{item.who}}" />
+    <div class="md-list-item-text" layout="column">
+      <h3>{{ $root.username }}</h3>
+      <h4>{{ $root.sports }}</h4>
+    </div>
+</md-content>
+<div flex ng-cloak layout="column" layout-fill layout-align="space-around">
+	<div flex layout="row" layout-align="space-around">
+		<div flex></div>
+		<div flex></div>
+	</div>
+	<div flex layout="row" layout-align="space-around">
+		<div flex>3</div>
+		<div flex>4</div>
+	</div>
+</div>

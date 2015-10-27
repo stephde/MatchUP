@@ -34,6 +34,10 @@ angular
         templateUrl: 'views/supriseme.html',
         controller: 'SuprisemeCtrl'
       })
+      .when('/dashboard', {
+        templateUrl: 'views/dashboard.html',
+        controller: 'DashboardCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

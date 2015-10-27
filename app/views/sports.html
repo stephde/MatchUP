@@ -2,12 +2,19 @@
 	<h2>My Sports</h2>
 	
 	<div ng-repeat="sports in mySports">
-		<md-input-container class="md-icon-float sportElement">
-	      <!-- Use floating label instead of placeholder -->
-	      <label>Sport</label>
-	      <md-icon md-svg-src="img/icons/ic_person_24px.svg" class="name"></md-icon>
-	      <input ng-model="sports.name" type="text">
-	    </md-input-container>
+		<md-autocomplete
+          md-items="item in sportsList | filter:searchText | limitTo:10"
+          md-item-text="item"
+          md-search-text="searchText"
+          md-min-length="0"
+          placeholder="Type in your Sport">
+        <md-item-template>
+          <span md-highlight-text="ctrl.searchText" md-highlight-flags="^i">{{item}}</span>
+        </md-item-template>
+        <md-not-found>
+          No states matching "{{searchText}}" were found.
+        </md-not-found>
+      </md-autocomplete>
 		<div layout>
 	      <div flex="10" layout layout-align="center center">
 	        <span class="md-body-1">Skill</span>
