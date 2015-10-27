@@ -75,3 +75,7 @@ section {
 .bold {
 	font-weight: bold;
 }
+
+.image {
+  margin-top: 10px
+}
