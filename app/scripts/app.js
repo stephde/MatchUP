@@ -16,7 +16,8 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'ngMaterial'
+    'ngMaterial',
+    'picardy.fontawesome'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -25,10 +26,13 @@ angular
         controller: 'LoginCtrl',
         controllerAs: 'main'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
-        controllerAs: 'about'
+      .when('/sports', {
+        templateUrl: 'views/sports.html',
+        controller: 'SportsCtrl'
+      })
+      .when('/supriseme', {
+        templateUrl: 'views/supriseme.html',
+        controller: 'SuprisemeCtrl'
       })
       .otherwise({
         redirectTo: '/'
