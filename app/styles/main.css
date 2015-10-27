@@ -31,3 +31,15 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.sportElement {
+	max-width: 75rem;
+}
+
+.tabContentWrapper {
+	padding: 3rem;
+}
+
+.dividerMargin {
+	margin: 1rem auto 1rem auto;
+}
