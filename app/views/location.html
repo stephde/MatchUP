@@ -1,3 +1,8 @@
-<p>This is the location view.</p>
+Where do you live?
+<input type="text" ng-model="string">
+<md-button class="md-primary" aria-label="Enter" ng-click="goToLA()">Enter	</md-button>
+<md-button class="md-primary" aria-label="Use current location" href="/dashboard">Use current location</md-button>
 
-<ui-gmap-google-map center='map.center' zoom='map.zoom'></ui-gmap-google-map>
+<ui-gmap-google-map id="map" center='map.center' zoom='map.zoom'>
+	<ui-gmap-marker ng-repeat="marker in markers" coords="marker.coords" idkey="marker.id"></ui-gmap-marker> 
+</ui-gmap-google-map>
