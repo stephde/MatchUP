@@ -8,7 +8,7 @@
  * Controller of the matchUpApp
  */
 angular.module('matchUpApp')
-  .controller('SportsCtrl', ["$scope", function ($scope) {
+  .controller('SportsCtrl', ["$scope", "$rootScope", function ($scope, $rootScope) {
     $scope.sportsList = ["Aerobatics",
 "Air racing",
 "Hot air ballooning|Ballooning",
@@ -1046,13 +1046,14 @@ angular.module('matchUpApp')
 "List of types of games",
 "Team sport"];
     
-    $scope.mySports = [{
+    $rootScope.sports = $rootScope.sports || [{
     	name: "",
     	skill: "1"
-    }]
+    }];
     
     $scope.addSport = function(){
-    	$scope.mySports.push({})
+      $rootScope.sports = $rootScope.sports || [];
+    	$rootScope.sports.push({})
     }
     
   }]);

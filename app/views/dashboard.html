@@ -4,7 +4,7 @@
 	    <div class="md-list-item-text" layout="column">
 		      <h3>{{ $root.username }}</h3>
 		      <h4><span ng-repeat="sport in $root.sports | limitTo:6">
-		     {{sport}}{{$last ? '' : ($index==$root.sports.length-2) ? ' and ' : ',&nbsp;'}}
+		     {{sport.name}}{{$last ? '' : ($index==$root.sports.length-2) ? ' and ' : ',&nbsp;'}}
 			</span></h4>
 	    </div>
 	</md-content>
