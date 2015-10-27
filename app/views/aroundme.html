@@ -1,1 +1,11 @@
-<p>This is the aroundme view.</p>
+<md-whiteframe class="md-whiteframe-1dp" layout-padding layout-margin>
+<h2>What is going on in my area?</h2>
+
+<ui-gmap-google-map id="map" center='map.center' zoom='map.zoom'>
+	<ui-gmap-marker ng-repeat="marker in markers" coords="marker.coords" idkey="marker.id"></ui-gmap-marker> 
+<ui-gmap-circle ng-repeat="c in circles track by c.id" center="c.center" stroke="c.stroke" fill="c.fill" radius="c.radius*1000"
+                visible="c.visible" geodesic="c.geodesic" editable="c.editable" draggable="c.draggable" clickable="c.clickable" control="c.control"></ui-gmap-circle>
+</ui-gmap-google-map>
+<md-slider flex md-discrete ng-model="circles[0].radius" step="0.1" min="1" max="10"></md-slider>
+
+</md-whiteframe>

@@ -14,6 +14,5 @@
 <ui-gmap-circle ng-repeat="c in circles track by c.id" center="c.center" stroke="c.stroke" fill="c.fill" radius="c.radius*1000"
                 visible="c.visible" geodesic="c.geodesic" editable="c.editable" draggable="c.draggable" clickable="c.clickable" control="c.control"></ui-gmap-circle>
 </ui-gmap-google-map>
-<md-slider flex md-discrete ng-model="circles[0].radius" step="1" min="1" max="8"></md-slider>
 
 </md-whiteframe>
