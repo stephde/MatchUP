@@ -43,10 +43,10 @@ angular.module('matchUpApp')
 		$scope.markers = []
 		$scope.markers.push({
 			id: id++,
-			coords: {latitude: 33.939328, longitude: -117.981927}
+			coords: {latitude: 34.0500271, longitude: -118.1981123}
 		})
 		
-		$scope.map = { center: { latitude: 33.939328, longitude: -117.981927 }, zoom: 12 };
+		$scope.map = { center: { latitude: 34.0500271, longitude: -118.1981123 }, zoom: 12 };
 		$scope.circles[0] = {
                 id: 1,
                 center: $scope.markers[0].coords,
