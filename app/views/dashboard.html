@@ -10,6 +10,7 @@
 <div flex ng-cloak layout="row" layout-fill layout-align="space-around" layout-wrap>
 	<div flex="50" layout-align="center center" layout ="column">
 		<h2>There are <h1>{{::near}}</h1><h2>Offers in your area</h2>
+		<p> {{$root.isMatchFound}} </p>
 		<div flex="60" layout layout-align="center center">
 		<md-button class="md-raised md-primary" ng-href="#/surpriseme">Find matches</md-button>
 	</div>
