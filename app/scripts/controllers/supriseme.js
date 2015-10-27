@@ -15,10 +15,13 @@ angular.module('matchUpApp')
       'Karma'
     ];
     
-    $scope.date = new Date()
+    $scope.date = new Date();
     
     $scope.closeNotification = function(accept){
-    	
-    }
+    	$scope.match = $scope.matches[1]
+    };
+
+    $scope.matches = [{"sport":"Baseball", "image":"images/baseballguy.jpg"},{"sport":"Tennis","image":"images/tennisgirl.jpg"}];
+    $scope.match = $scope.matches[0];
     
   }]);

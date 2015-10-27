@@ -58,3 +58,12 @@ section {
 	border: 1px solid lightgray;
 	max-width: 25rem;
 }
+
+.angular-google-map-container { 
+	height: 400px;
+}
+
+.newLineButton {
+	display: block;
+    margin: 2rem auto 2rem auto;
+}
