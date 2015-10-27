@@ -27,9 +27,11 @@
         <md-divider ng-if="!$last" class="dividerMargin"></md-divider>
 	</div>
 	
-	<md-button class="md-fab md-primary" aria-label="Add sport" ng-click="addSport()">
-		<md-icon md-font-icon="fa-plus" class="fa fa-2x"></md-icon>  
-	</md-button>
-	
-	<md-button class="newLineButton md-primary" href="#/location">Next</md-button>
+  <div layout=row>
+  	<md-button class="md-fab md-primary" aria-label="Add sport" ng-click="addSport()">
+  		<md-icon md-font-icon="fa-plus" class="fa fa-2x"></md-icon>  
+  	</md-button>
+  	
+  	<md-button class="newLineButton md-raised md-primary" href="#/location">Next</md-button>
+  </div>
 </div>
