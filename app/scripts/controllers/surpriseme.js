@@ -55,14 +55,14 @@ angular.module('matchUpApp')
     $scope.closeNotification = function(accept){
       if (accept) {
         $scope.showSimpleToast()
-        $rootScope.myGames = [{"name":"Tennis", "date":$scope.date.toLocaleString(), "image":"images/tennisgirl.jpg"}];
+        $rootScope.myGames = [{"name":"Tennis", "date":$scope.date.toLocaleString(), "image":"images/tennisgirl.jpg", "sportIcon":iconForSport("tennis")}].concat($rootScope.myGames);
       } else {
         $scope.match = $scope.matches[1]
       }
     	
     };
 
-    $scope.matches = [{"sport":"Baseball", "image":"images/baseballguy.jpg"},{"sport":"Tennis","image":"images/tennisgirl.jpg"}];
+    $scope.matches = [{"sport":"Baseball", "image":"images/baseballguy.jpg", "map":"images/mapBaseball.png"},{"sport":"Tennis","image":"images/tennisgirl.jpg", "map":"images/mapTennis.png"}];
     $scope.match = $scope.matches[0];
     
   }]);

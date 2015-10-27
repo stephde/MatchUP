@@ -1048,12 +1048,12 @@ angular.module('matchUpApp')
     
     $rootScope.sports = $rootScope.sports || [{
     	name: "",
-    	skill: "1"
+    	skill: "5"
     }];
     
     $scope.addSport = function(){
       $rootScope.sports = $rootScope.sports || [];
-    	$rootScope.sports.push({})
+    	$rootScope.sports.push({skill:5})
     }
     
   }]);

@@ -18,14 +18,17 @@ angular.module('matchUpApp')
     $scope.myHistoricGames = [{
         name: "Marvin",
         skill: "1",
+        sport: iconForSport("swimming"),
         image: "images/members/marvin.jpg"
     }, {
         name: "Thomas",
         skill: "3",
+        sport: iconForSport("tennis"),
         image: "images/members/thomas.jpg"
     }, {
         name: "Jonas",
         skill: "5",
+        sport: iconForSport("handball"),
         image: "images/members/jonas.jpg"
     }];
     
