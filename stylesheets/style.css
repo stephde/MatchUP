@@ -31,3 +31,8 @@ html, body {
         height: 500px;
         width: 768px;
 }
+
+/*#map img {
+    -webkit-filter: brightness(0.0); 
+    filter: brightness(0.0);
+}*/

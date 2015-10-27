@@ -31,7 +31,7 @@ function showSports() {
 		var sportMarker = new google.maps.Marker({
 		  	map: map,
 		  	position: {lat : sportData[i].lat, lng : sportData[i].long},
-		  	icon: 'https://ssl.gstatic.com/heart/images/2x/ic_' + sportData[i].sport + '.png'
+		  	icon: iconForSport(sportData[i].sport)
  	 	});
  	 	
  	 	var infowindow = new google.maps.InfoWindow({
