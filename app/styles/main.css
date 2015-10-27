@@ -49,3 +49,5 @@ section {
 	border: 1px solid lightgray;
 	max-width: 25rem;
 }
+
+.angular-google-map-container { height: 400px; }
