@@ -16,7 +16,8 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'ngMaterial'
+    'ngMaterial',
+    'picardy.fontawesome'
   ])
   .config(function ($routeProvider) {
     $routeProvider
