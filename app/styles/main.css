@@ -67,3 +67,7 @@ section {
 	display: block;
     margin: 2rem auto 2rem auto;
 }
+
+.history_card {
+    max-width: 500px;
+}
