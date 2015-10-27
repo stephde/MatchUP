@@ -1,1 +1,23 @@
-<p>This is the login view.</p>
+<div flex ng-controller="LoginCtrl" ng-cloak layout="column" layout-fill>
+  <md-content flex layout="column" layout-fill layout-align="space-around" id="backgroundimage">
+    <div flex="10"></div>
+    <section layout="column" layout-align="center center" layout-padding>
+      	<md-input-container layout-fill>
+	      <label>Username</label>
+	      <input ng-model="user.username">
+	    </md-input-container>
+	    <md-input-container layout-fill>
+	      <label>Email</label>
+	      <input ng-model="user.email" type="email">
+	    </md-input-container>
+	    <div layout-fill layout="row">
+	    	<div flex></div>
+	    	<md-button flex="30" class="md-raised md-primary">Log In</md-button>
+	    	<div flex></div>
+	    	<md-button flex="30"  class="md-raised">Register</md-button>
+	    	<div flex></div>
+	    </div>
+    </section>
+    <div flex="10"></div>
+   </md-content>
+ </div>
