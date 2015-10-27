@@ -81,3 +81,11 @@ body {
     border-bottom: 0;
   }
 }
+
+.sportElement {
+	max-width: 75rem;
+}
+
+.tabContentWrapper {
+	padding: 3rem;
+}
