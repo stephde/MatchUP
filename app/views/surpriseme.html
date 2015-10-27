@@ -1,29 +1,15 @@
-<div class="tabContentWrapper">
-
-	<div class="notificationWrapper">
-		
-		<div class="notificationHeader">
-			<h2>{{match.sport}}</h2>
-		</div>
-		
-		<div class="notificationMap">
-			
-		</div>
-		
-		<div class="notificationTime">
-			<md-datepicker ng-model="date" md-placeholder="Enter date" disabled></md-datepicker>
-		</div>
-
-    <div  class="image">
-      <img flex="100" ng-src={{match.image}} alt="Description" />
-    </div>
-    <div class="image" >
-      <img flex="100" ng-src={{match.map}} alt="Description" />
-    </div>
-		
-		<md-button ng-click="closeNotification(true)" ng-href="#/dashboard" class="md-primary">Yes</md-button>
-		<md-button ng-click="closeNotification(false)" class="md-warn">Not now</md-button>
-		
+<div flex layout-fill layout="column">
+	<h2>{{match.sport}}</h2>
+	<div style="position:absolute; margin-top: 8px; padding:10px; background-color:rgba(255,255,255,0.8); width:100%">
+	<md-icon md-font-icon="fa-calendar" class="fa fa-2x"style="display:inline-block;"></md-icon>
+	<span>{{date.toLocaleString()}}<span></div>
+	<img ng-src={{match.image}} alt="Description" />
+    
+    <div style="position:relative; margin-top: -100px" layout="column">	
+		<md-button flex ng-click="closeNotification(true)" ng-href="#/dashboard" class="md-primary md-raised">Yes</md-button>
+		<md-button flex ng-click="closeNotification(false)" class="md-warn md-raised">Not now</md-button>
 	</div>
+
+	<div><h3>Map</h3><img ng-src={{match.map}} alt="Description" style="width:100%"/></div>
 
 </div>

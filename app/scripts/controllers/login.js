@@ -13,7 +13,10 @@ angular.module('matchUpApp')
   		$scope.facebook = true;
   		$rootScope.sports = [{
 	    	name: "Tennis",
-	    	skill: "3"
+	    	skill: "1"
+	    }, {
+	    	name: "Handball",
+	    	skill: "1"
 	    }];
   		$timeout(function() {$location.path('sports')},2000);
   	}
