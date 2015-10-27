@@ -27,7 +27,7 @@ angular.module('matchUpApp')
 	$scope.circles = [{
                 id: 1,
                 center: $scope.markers[0].coords,
-                radius: 5000,
+                radius: 5,
                 stroke: {
                     color: '#FF0000',
                     weight: 2,
@@ -50,7 +50,7 @@ angular.module('matchUpApp')
 		$scope.circles[0] = {
                 id: 1,
                 center: $scope.markers[0].coords,
-                radius: 5000,
+                radius: 5,
                 stroke: {
                     color: '#FF0000',
                     weight: 2,
@@ -63,7 +63,4 @@ angular.module('matchUpApp')
     	}
 	}
 	
-	$scope.drawCircle = function(radius) {
-		
-	}
   }]);
