@@ -8,10 +8,15 @@
  * Controller of the matchUpApp
  */
 angular.module('matchUpApp')
-  .controller('LoginCtrl', function () {
+  .controller('LoginCtrl', ["$scope", function ($scope) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
-  });
+    
+    $scope.user = {
+    	name: "John Doe",
+    	password: "Password123"
+    }
+  }]);
