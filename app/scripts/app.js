@@ -25,10 +25,9 @@ angular
         controller: 'LoginCtrl',
         controllerAs: 'main'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
-        controllerAs: 'about'
+      .when('/sports', {
+        templateUrl: 'views/sports.html',
+        controller: 'SportsCtrl'
       })
       .otherwise({
         redirectTo: '/'
