@@ -71,3 +71,7 @@ section {
 .history_card {
     max-width: 500px;
 }
+
+.bold {
+	font-weight: bold;
+}
