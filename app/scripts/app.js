@@ -31,9 +31,9 @@ angular
         templateUrl: 'views/sports.html',
         controller: 'SportsCtrl'
       })
-      .when('/supriseme', {
-        templateUrl: 'views/supriseme.html',
-        controller: 'SuprisemeCtrl'
+      .when('/surpriseme', {
+        templateUrl: 'views/surpriseme.html',
+        controller: 'SurprisemeCtrl'
       })
       .when('/dashboard', {
         templateUrl: 'views/dashboard.html',
