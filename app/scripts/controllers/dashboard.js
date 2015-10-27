@@ -11,8 +11,5 @@ angular.module('matchUpApp')
   .controller('DashboardCtrl', function ($rootScope, $scope) {
   	$rootScope.username = $rootScope.username || 'Username';
   	$rootScope.sports = $rootScope.sports || ['Tennis', 'Handball'];
-  	$scope.getRandom = function(){
-	  return Math.floor((Math.random()*200)+1);
-	}
-
+  	$scope.near = Math.floor((Math.random()*200)+1);
   });
