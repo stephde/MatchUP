@@ -4,15 +4,15 @@
     <div layout="row" layout-wrap>
         <md-card ng-repeat="game in $root.myGames" class="history_card">
           <img ng-src="{{game.image}}" class="md-card-image" alt="Person">
-          <md-card-content>
-            <h2 class="md-title">{{game.name}}</h2>
-            <img src="{{game.sportIcon}}">
-            <div layout>
-                <div flex="10" layout layout-align="center center">
-                    <span class="md-body-1">{{game.date}}</span>
-                </div>
+          <md-card-content layout="column">
+            <div layout="row" layout-fill>
+                <img src="{{game.sportIcon}}" style="width:auto">
+                <h2 flex>{{game.name}}</h2>
+                <h2 flex>{{game.date}}</h2>
             </div>
+            <div><img ng-src="game.map" alt="Description" style="width:100%"/></div>
           </md-card-content>
         </md-card>
+
     </div>
 </div>
