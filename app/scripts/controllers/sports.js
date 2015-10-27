@@ -16,8 +16,8 @@ angular.module('matchUpApp')
     ];
     
     $scope.mySports = [{
-    	name: "Tennis",
-    	skill: "2"
+    	name: "",
+    	skill: "1"
     }]
     
     $scope.addSport = function(){

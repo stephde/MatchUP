@@ -89,3 +89,7 @@ body {
 .tabContentWrapper {
 	padding: 3rem;
 }
+
+.dividerMargin {
+	margin: 1rem auto 1rem auto;
+}
