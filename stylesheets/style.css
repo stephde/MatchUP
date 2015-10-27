@@ -6,6 +6,11 @@ h1 {
 	margin: auto;
 }
 
+.block {
+	display: block;
+	margin: 1rem;
+}
+
 #headerWrapper {
 	display: flex;
 	border-bottom: 1px solid lightgray;
