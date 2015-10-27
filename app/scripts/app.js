@@ -15,7 +15,7 @@ function iconForSport(sport) {
     if (avail.indexOf(sport) >= 0)
         return 'images/map_icons/ic_'+sport+'-inverted.png';
 
-    return 'imgs/map_icons/default_small.png';
+    return 'images/map_icons/default_small.png';
 }
 
 function dataForSport(sport) {

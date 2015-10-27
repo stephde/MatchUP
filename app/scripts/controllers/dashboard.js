@@ -17,6 +17,6 @@ angular.module('matchUpApp')
     someDate.setMinutes(0);
     someDate.setSeconds(0);
 
-    $rootScope.myGames = $rootScope.myGames || [{"name":"Michael", "date":someDate.toLocaleString(), "image":"images/members/michael.jpg", "sportIcon":iconForSport("handball")}];
+    $rootScope.myGames = $rootScope.myGames || [{"name":"Michael", "date":someDate.toLocaleString(), "image":"images/members/michael.jpg", "sportIcon":iconForSport("handball"), "map": "images/micha_location.png"}];
 
   });
