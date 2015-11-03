@@ -22,35 +22,24 @@
 	}
 }
 
-.backgroundOpacity (@opacity: 0.5, @color: @contentBgColor) {
-	&:after {
-		display: block;
-		content: " ";
-		background-color: @color;
-    	background-size: cover;
-		opacity: @opacity;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		position: absolute;
-		z-index: -1;
-	}
-}
 
 @root: "../";
-.backgroundImage (@url) {
-	&:before {
-		display: block;
-		position: absolute;
-		content: " ";
-		background-image: url("@{root}@{url}");
+.transparentBackgroundImage(@url) {	
+	transition: background-color 1s;
+	background: 
+		linear-gradient(
+			rgba(178,178,195,0.8),
+			rgba(178,178,195,0.65)),
+		url("@{root}@{url}");
+	background-size: cover;
+
+	&:hover {
+	background: 
+		linear-gradient(
+			rgba(238,238,255,0.8),
+			rgba(238,238,255,0.65)),
+		url("@{root}@{url}");
 		background-size: cover;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		z-index: -2;		
 	}
 }
 
@@ -95,12 +84,17 @@ h2{
 	a {
 		.normalizeLinks;
 		width: 100%;
-		padding: 1.5rem 0 1.5rem 4rem;
+		padding: 0.5rem 0 0.5rem 2rem;
 		transition: background-color 1s;
 
 		&:hover {
 			font-weight: bold;
 			background-color: lighten(@menuBgColor, 10%);
+		}
+
+		i {
+			padding: 1rem;
+			font-size: 150%;
 		}
 	}
 }
@@ -108,7 +102,7 @@ h2{
 #content {
 	position: relative;
 	float: left;
-	width: 80%;
+	width: 85%;
 	height: 100%;
 	overflow-x: hidden;
 	overflow-y: auto;
@@ -121,9 +115,19 @@ section {
 	width: 100%;
 	min-height: 25rem;
 	padding-left: 3rem;
+ 	padding-top: 5rem;
+}
 
-	.backgroundImage("screenshots/1.png");
-	.backgroundOpacity(0.3);
+.sectionHome{
+	.transparentBackgroundImage("screenshots/1.png");
+}
+
+.sectionMisson{
+	.transparentBackgroundImage("screenshots/2.png");
+}
+
+.sectionPrototype{
+	.transparentBackgroundImage("screenshots/3.png");
 }
 
 .maintenance {
