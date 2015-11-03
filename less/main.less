@@ -22,6 +22,38 @@
 	}
 }
 
+.backgroundOpacity (@opacity: 0.5, @color: @contentBgColor) {
+	&:after {
+		display: block;
+		content: " ";
+		background-color: @color;
+    	background-size: cover;
+		opacity: @opacity;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		position: absolute;
+		z-index: -1;
+	}
+}
+
+@root: "../";
+.backgroundImage (@url) {
+	&:before {
+		display: block;
+		position: absolute;
+		content: " ";
+		background-image: url("@{root}@{url}");
+		background-size: cover;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: -2;		
+	}
+}
+
 html, body {
 	position: relative;
 	font-family: Rockwell, "Liberation Mono", Courier, monospace;
@@ -74,14 +106,24 @@ h2{
 }
 
 #content {
+	position: relative;
 	float: left;
 	width: 80%;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
 }
 
 section {
+	position: relative;
 	display: flex;
+	flex-wrap: wrap;
 	width: 100%;
-	min-height: 3rem;
+	min-height: 25rem;
+	padding-left: 3rem;
+
+	.backgroundImage("screenshots/1.png");
+	.backgroundOpacity(0.3);
 }
 
 .maintenance {
