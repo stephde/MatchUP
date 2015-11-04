@@ -28,8 +28,8 @@
 	transition: background-color 1s;
 	background: 
 		linear-gradient(
-			rgba(178,178,195,0.8),
-			rgba(178,178,195,0.65)),
+			rgba(198,198,215,0.8),
+			rgba(198,198,215,0.15)),
 		url("@{root}@{url}");
 	background-size: cover;
 
@@ -116,8 +116,8 @@ section {
 	flex-wrap: wrap;
 	width: 100%;
 	min-height: 25rem;
-	padding-left: 3rem;
  	padding-top: 5rem;
+ 	padding-bottom: 5rem;
 }
 
 .sectionHome{
@@ -134,8 +134,33 @@ section {
 
 p {
 	width: 90%;
-	padding-left: 5rem;
-	padding-right: 15rem;
+	padding-left: 7.5rem;
+	padding-right: 7.5rem;
+}
+
+.linkWrapper {
+	width: 95%;
+	display: flex;
+	padding-left: 7.5rem;
+	padding-right: 7.5rem;
+
+	a {
+		.normalizeLinks;
+		margin: auto;
+		padding: 1rem 4.5rem 1rem 4.5rem;
+		background-color: @menuBgColor;
+		transition: background-color 1s;
+
+		&:hover {
+			font-weight: bold;
+			background-color: lighten(@menuBgColor, 10%);
+		}
+
+		i {
+			padding: 1rem;
+			font-size: 100%;
+		}
+	}
 }
 
 /**** Image carousel *****/
@@ -249,7 +274,12 @@ input#img-2:checked ~ .nav-dots label#img-dot-2,
 input#img-3:checked ~ .nav-dots label#img-dot-3,
 input#img-4:checked ~ .nav-dots label#img-dot-4,
 input#img-5:checked ~ .nav-dots label#img-dot-5,
-input#img-6:checked ~ .nav-dots label#img-dot-6 {
+input#img-6:checked ~ .nav-dots label#img-dot-6,
+input#img-7:checked ~ .nav-dots label#img-dot-7,
+input#img-8:checked ~ .nav-dots label#img-dot-8,
+input#img-9:checked ~ .nav-dots label#img-dot-9,
+input#img-10:checked ~ .nav-dots label#img-dot-10,
+input#img-11:checked ~ .nav-dots label#img-dot-11 {
 	background: rgba(0, 0, 0, 0.8);
 }
 

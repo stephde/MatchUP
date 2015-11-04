@@ -92,12 +92,12 @@ section {
   flex-wrap: wrap;
   width: 100%;
   min-height: 25rem;
-  padding-left: 3rem;
   padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 .sectionHome {
   transition: background-color 1s;
-  background: linear-gradient(rgba(178, 178, 195, 0.8), rgba(178, 178, 195, 0.65)), url("../");
+  background: linear-gradient(rgba(198, 198, 215, 0.8), rgba(198, 198, 215, 0.15)), url("../");
   background-size: cover;
 }
 .sectionHome:hover {
@@ -106,7 +106,7 @@ section {
 }
 .sectionMisson {
   transition: background-color 1s;
-  background: linear-gradient(rgba(178, 178, 195, 0.8), rgba(178, 178, 195, 0.65)), url("../");
+  background: linear-gradient(rgba(198, 198, 215, 0.8), rgba(198, 198, 215, 0.15)), url("../");
   background-size: cover;
 }
 .sectionMisson:hover {
@@ -115,7 +115,7 @@ section {
 }
 .sectionPrototype {
   transition: background-color 1s;
-  background: linear-gradient(rgba(178, 178, 195, 0.8), rgba(178, 178, 195, 0.65)), url("../");
+  background: linear-gradient(rgba(198, 198, 215, 0.8), rgba(198, 198, 215, 0.15)), url("../");
   background-size: cover;
 }
 .sectionPrototype:hover {
@@ -124,8 +124,44 @@ section {
 }
 p {
   width: 90%;
-  padding-left: 5rem;
-  padding-right: 15rem;
+  padding-left: 7.5rem;
+  padding-right: 7.5rem;
+}
+.linkWrapper {
+  width: 95%;
+  display: flex;
+  padding-left: 7.5rem;
+  padding-right: 7.5rem;
+}
+.linkWrapper a {
+  margin: auto;
+  padding: 1rem 4.5rem 1rem 4.5rem;
+  background-color: #3333ff;
+  transition: background-color 1s;
+}
+.linkWrapper a:link {
+  color: #eeeeff;
+  text-decoration: none;
+}
+.linkWrapper a:hover {
+  color: #eeeeff;
+  text-decoration: none;
+}
+.linkWrapper a:visited {
+  color: #eeeeff;
+  text-decoration: none;
+}
+.linkWrapper a:active {
+  color: #eeeeff;
+  text-decoration: none;
+}
+.linkWrapper a:hover {
+  font-weight: bold;
+  background-color: #6666ff;
+}
+.linkWrapper a i {
+  padding: 1rem;
+  font-size: 100%;
 }
 /**** Image carousel *****/
 .slides {
@@ -223,7 +259,12 @@ input#img-2:checked ~ .nav-dots label#img-dot-2,
 input#img-3:checked ~ .nav-dots label#img-dot-3,
 input#img-4:checked ~ .nav-dots label#img-dot-4,
 input#img-5:checked ~ .nav-dots label#img-dot-5,
-input#img-6:checked ~ .nav-dots label#img-dot-6 {
+input#img-6:checked ~ .nav-dots label#img-dot-6,
+input#img-7:checked ~ .nav-dots label#img-dot-7,
+input#img-8:checked ~ .nav-dots label#img-dot-8,
+input#img-9:checked ~ .nav-dots label#img-dot-9,
+input#img-10:checked ~ .nav-dots label#img-dot-10,
+input#img-11:checked ~ .nav-dots label#img-dot-11 {
   background: rgba(0, 0, 0, 0.8);
 }
 /***** maintenance overlay ******/
