@@ -188,6 +188,7 @@ p {
   color: #3333ff;
 }
 .linkWrapper a i {
+  transition: color 2s;
   padding: 1rem;
   font-size: 150%;
 }
