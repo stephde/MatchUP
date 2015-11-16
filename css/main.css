@@ -296,6 +296,14 @@ input#img-10:checked ~ .nav-dots label#img-dot-10,
 input#img-11:checked ~ .nav-dots label#img-dot-11 {
   background: rgba(0, 0, 0, 0.8);
 }
+@media all and (max-width: 1300px) {
+  #menu {
+    display: none;
+  }
+  #content {
+    width: 100vw;
+  }
+}
 /***** maintenance overlay ******/
 .maintenance {
   display: inline-block;
