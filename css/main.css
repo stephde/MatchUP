@@ -198,7 +198,7 @@ p {
   width: 70vw;
   height: 85vh;
   display: block;
-  margin: 0 auto;
+  margin: 2rem auto;
   position: relative;
 }
 .slides * {
@@ -302,6 +302,14 @@ input#img-11:checked ~ .nav-dots label#img-dot-11 {
   }
   #content {
     width: 100vw;
+  }
+  .slides {
+    height: 60vh;
+  }
+}
+@media all and (max-width: 850px) {
+  .slides {
+    height: 45vh;
   }
 }
 /***** maintenance overlay ******/
